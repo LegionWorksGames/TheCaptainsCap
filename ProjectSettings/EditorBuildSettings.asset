@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scene/menu/00 splash-screen.unity
+    guid: 0f6ab13bde0d7f847a23df93368cfcc6
+  - enabled: 1
+    path: Assets/_Scene/menu/01a Start.unity
+    guid: eec16c7ae4bc2af4a978e8d8b9e2b5ba
+  - enabled: 1
+    path: Assets/_Scene/menu/01b Options.unity
+    guid: a4f8bd5c9cdcba443be407eacfbed54d
+  - enabled: 1
+    path: Assets/_Scene/game/02a Game.unity
+    guid: 7847e01ac7996a24fa9df6f48e59e61f
+  - enabled: 1
+    path: Assets/_Scene/game/02b Game.unity
+    guid: e9d44a46750b1eb489034df211760e83
+  - enabled: 1
+    path: Assets/_Scene/game/02c Game.unity
+    guid: e8d4ffd45746520428748ef7ebb321cb
+  - enabled: 1
+    path: Assets/_Scene/game/02d Game.unity
+    guid: 18fb7d037a36f1a4fbfa60cc27578dc1
+  - enabled: 1
+    path: Assets/_Scene/game/02e Game.unity
+    guid: 8e92fc1be389677459a3a30746f6b64a
+  - enabled: 1
+    path: Assets/_Scene/game/02f Game.unity
+    guid: f2e4e02b070d6f74191682a6f01d654d
+  - enabled: 1
+    path: Assets/_Scene/conditions/03a Win.unity
+    guid: 4dd8af331ce2aa4438ee160cd064c629
+  - enabled: 1
+    path: Assets/_Scene/conditions/03b Lose.unity
+    guid: 2e8b4fd6c78187c40a2920f93125d954
+  - enabled: 1
+    path: Assets/_Scene/conditions/03c HowToPlay.unity
+    guid: 53953594874ad6d4397bb80627ef097e
