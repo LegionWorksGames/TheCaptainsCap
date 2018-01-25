@@ -17,6 +17,16 @@ public class PlayerPrefsManager : MonoBehaviour {
 	const string MASTER_VOLUME_KEY = "master_volume";
 	const string SFX_VOLUME_KEY = "SFX_volume";
 	const string DIFFICULTY_KEY = "difficulty";
+	const string SET_UP_SHOP = "shop_set";
+
+	public static void SetShop(int playedBool)
+	{
+		PlayerPrefs.SetInt(SET_UP_SHOP, playedBool);
+	}
+	public static int GetShop()
+	{
+		return PlayerPrefs.GetInt(SET_UP_SHOP);
+	}
 
 	public static void SetGameCheck(int playedBool)
 	{

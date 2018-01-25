@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1630614989087386}
+  m_IsPrefabParent: 1
+--- !u!1 &1630614989087386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4868160741951248}
+  - component: {fileID: 114413593376559606}
+  m_Layer: 0
+  m_Name: ShopController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4868160741951248
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1630614989087386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 271.07117, y: 172.08124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114413593376559606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1630614989087386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4cbaa042d6e51479c6fb19baf3fdc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - itemName: Jump Glide
+    itemID: 0
+    itemDesc: Allows you to press Space bar while in the air to jet forward.
+    itemValue: 20
+    itemType: 1
+  - itemName: Jump Glide II
+    itemID: 1
+    itemDesc: Allows you to press Space bar while in the air to jet forward.
+    itemValue: 40
+    itemType: 1
+  - itemName: Jump Glide III
+    itemID: 2
+    itemDesc: Allows you to press Space bar while in the air to jet forward.
+    itemValue: 60
+    itemType: 1
+  - itemName: Jump Glide IV
+    itemID: 3
+    itemDesc: Allows you to press Space bar while in the air to jet forward.
+    itemValue: 80
+    itemType: 1
+  - itemName: Jump Glide V
+    itemID: 4
+    itemDesc: Allows you to press Space bar while in the air to jet forward.
+    itemValue: 100
+    itemType: 1
+  - itemName: Speed Up
+    itemID: 5
+    itemDesc: Allows you to press Up Arrow to run faster.
+    itemValue: 20
+    itemType: 1
+  - itemName: Speed Up II
+    itemID: 6
+    itemDesc: Allows you to press Up Arrow to run faster.
+    itemValue: 40
+    itemType: 1
+  - itemName: Speed Up III
+    itemID: 7
+    itemDesc: Allows you to press Up Arrow to run faster.
+    itemValue: 60
+    itemType: 1
+  - itemName: Speed Up IV
+    itemID: 8
+    itemDesc: Allows you to press Up Arrow to run faster.
+    itemValue: 80
+    itemType: 1
+  - itemName: Speed Up V
+    itemID: 9
+    itemDesc: Allows you to press Up Arrow to run faster.
+    itemValue: 100
+    itemType: 1
+  - itemName: Fast Fall
+    itemID: 10
+    itemDesc: Allows you to press Down Arrow to fall.
+    itemValue: 60
+    itemType: 0
+  - itemName: Auto Climb
+    itemID: 11
+    itemDesc: Will automatically climb a ledge if your hand hits it
+    itemValue: 100
+    itemType: 0
+  inventory: []
+  shop: []
+  shopItems:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  invItems:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  gems: {fileID: 0}
+  itemType: {fileID: 0}
+  itemDesc: {fileID: 0}

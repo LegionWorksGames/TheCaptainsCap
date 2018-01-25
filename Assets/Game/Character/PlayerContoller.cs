@@ -16,7 +16,7 @@ public class PlayerContoller : MonoBehaviour {
      * the layermask lets you select a layer to be ground; you will need to create a layer named ground(or whatever you like) and assign your
      * ground objects to this layer.
      * The stoppedJumping bool lets us track when the player stops jumping.*/
-	public bool grounded, extraPush;
+	public bool grounded, extra;
 	public LayerMask whatIsGround;
 	public bool stoppedJumping;
 
@@ -29,6 +29,7 @@ public class PlayerContoller : MonoBehaviour {
 
 	void Start()
 	{
+		print(GameManager.UPGRADE[0]);
 		//sets the jumpCounter to whatever we set our jumptime to in the editor
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
@@ -38,6 +39,7 @@ public class PlayerContoller : MonoBehaviour {
 	void Update()
 	{		
 		MovementCatch();
+		Abilities();
 		//determines whether our bool, grounded, is true or false by seeing if our groundcheck overlaps something on the ground layer
 		grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
@@ -47,7 +49,7 @@ public class PlayerContoller : MonoBehaviour {
 		{
 			//the jumpcounter is whatever we set jumptime to in the editor.
 			jumpTimeCounter = jumpTime;
-			extraPush = false;
+			extra = false;
 		}
 		anim.SetBool("grounded", grounded);
 		//if you press down the mouse button...
@@ -108,6 +110,41 @@ public class PlayerContoller : MonoBehaviour {
 		if (transform.position.x > 3 && grounded)
 		{
 			transform.position -= Vector3.right * (0.5f *Time.deltaTime);
+		}
+	}
+
+	void Abilities()
+	{
+		if (GameManager.UPGRADE[0] >= 0)
+		{
+			print("glide Unlocked");
+			//glide
+			if (Input.GetKeyDown("space") && stoppedJumping && !grounded && !extra)
+			{				
+				float forceX = ((GameManager.UPGRADE[0]/2) + 0.5f /* * Time.deltaTime */);
+				rb.velocity = new Vector2(forceX, rb.velocity.y);
+				print("this happened");
+				extra = true;
+			}
+		}
+		if (GameManager.UPGRADE[1] == 10 && !extra)
+		{
+			print("drop Unlocked");
+			if (Input.GetKeyDown(KeyCode.DownArrow) && !grounded)
+			{
+				rb.velocity = new Vector2(0, -2);
+				extra = true;
+			}
+		}
+		if (GameManager.UPGRADE[2] == 5)
+		{
+			print("speed Unlocked");
+			//glide
+			if (Input.GetKey("RightArrow") /* && grounded? */)
+			{
+				int forceX = ((GameManager.UPGRADE[2] - 4) / 10 /* * Time.deltaTime */);
+				rb.velocity = new Vector2(forceX, rb.velocity.y);
+			}
 		}
 	}
 }

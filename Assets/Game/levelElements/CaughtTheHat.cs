@@ -20,6 +20,22 @@ public class CaughtTheHat : MonoBehaviour {
 	{
 		if (col.gameObject.CompareTag("Player"))
 		{
+			LevelController lvlcont = FindObjectOfType<LevelController>();
+			if (lvlcont.gameType == GameType.classic)
+			{
+				if (lvlcont.levelDurationInSeconds > Time.timeSinceLevelLoad)
+				{					
+					GameManager.GEMS += 10 + (5 * lvlcont.lvlNumber);
+				}
+				else
+				{
+					GameManager.GEMS += 10;
+				}				
+			}
+			else if (lvlcont.gameType == GameType.trial)
+			{
+
+			}
 			levelManager.LoadNextLevel();
 		}
 	}

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelController : MonoBehaviour {
-
+	
+	public GameType gameType;
 	public int levelDurationInSeconds, lvlNumber;
 	public Slider timeSlider;
 	public GameObject hat, player;	

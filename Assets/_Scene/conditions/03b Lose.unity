@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb2da1a57d823445b4c9e3c07babada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildOffset: 3
+  buildOffset: 5
 --- !u!114 &1271784713
 MonoBehaviour:
   m_ObjectHideFlags: 0

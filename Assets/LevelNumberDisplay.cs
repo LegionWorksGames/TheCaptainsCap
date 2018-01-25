@@ -12,6 +12,6 @@ public class LevelNumberDisplay : MonoBehaviour {
 	void Start () {
 		lvlCont = FindObjectOfType<LevelController>();
 		text = GetComponent<Text>();
-		text.text = "Level: " + lvlCont.lvlNumber;
+		text.text = "Level: " + lvlCont.lvlNumber + "\nGems: " + GameManager.GEMS;
 	}	
 }
